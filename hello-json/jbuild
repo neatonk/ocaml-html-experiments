@@ -1,0 +1,7 @@
+(jbuild_version 1)
+
+(executable
+  ((name hello_json)
+   (public_name hello-json)
+   (libraries (tyxml yojson ppx_deriving_yojson result))
+   (preprocess (pps (ppx_deriving_yojson)))))
